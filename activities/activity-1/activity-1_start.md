@@ -41,7 +41,7 @@ We recommend running all workshop exercises in a Python virtual environment, jus
 
 #### Requirements
 Dependencies live in `requirements.txt` and match what you installed in the venv:
-- mlflow==2.15.1
+- mlflow>=2.15.1
 - pandas>=2.0.0
 - scikit-learn>=1.3.0
 - numpy>=1.24.0

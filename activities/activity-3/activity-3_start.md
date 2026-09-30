@@ -6,7 +6,7 @@ Because the logic is now a little more complex, we may want to log it. We can co
 By the end of this activity, you will have:
 - modified the Python code of the `should_upsell()` method so that *all* tests (old and new) pass;
 - added logging code with MLflow;
-- explored the `mlruns` directory to see your "experiment" results.
+- see the .db database that was created
 
 ## 📝 Step 3 – TDD Cycle 2 (🔴 Red → 🟢 Green + Intro to MLflow)
 
