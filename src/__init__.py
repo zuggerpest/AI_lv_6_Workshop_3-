@@ -1,0 +1,3 @@
+"""
+Hotdog upsell rules package.
+"""
