@@ -30,7 +30,7 @@ Add this to a new Code cell and run:
 ```python
 try:
     import mlflow
-    mlflow.set_tracking_uri("file:./mlruns")
+    mlflow.set_tracking_uri("sqlite:///mlflow.db")
     mlflow.set_experiment("hotdog-upsell")
     with mlflow.start_run(run_name="Initial Loyalty Rule"):
         order = {"time_of_day": "lunch", "loyalty_member": "yes"}
@@ -46,4 +46,5 @@ except Exception:
 ✅ **Checkpoint:** You should see `Experiment logged successfully ✅` printed.
 
 - You can now  explore the `mlruns` directory in the VS Code file browser to find the files MLflow created.
-- Or browse the same files in the ML Flow UI. If you've not done this already, as a reminder, you would run `mlflow ui --port 5000 --backend-store-uri file:./mlruns` then open http://localhost:5000
+- Or browse the same files in the ML Flow UI. If you've not done this already, as a reminder, you would run 
+mlflow ui --port 5000 --backend-store-uri sqlite:///mlflow.db
